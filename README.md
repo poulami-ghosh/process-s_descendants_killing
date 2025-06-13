@@ -6,6 +6,6 @@ Goal of the project is to kill a process and all its (current) descendants.My pr
 ## 3.(A) To view the full process tree rooted at pid 1:
   run with command ./a.out   whole_tree
 ## 3.(B) To view the target tree (to be killed) rooted at given input pid (<target_pid>) by user:
-  run with command ./a.out   target_tree <p></p>   <target_pid>
+  run with command ./a.out   target_tree &nbsp  <target_pid>
 ## 3.(C) To kill the subtree rooted at target tree:
   run with command ./a.out   kill   <target_pid>
