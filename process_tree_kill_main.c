@@ -15,7 +15,7 @@
 int main(int argc, char* argv[]) {
     //__________ASKING FOR COMMANDLINE ARGUMENTS_______________
     if (argc < 2) {
-        printf("enter the taget pid also along with ./a.out\n");
+        printf("enter the target pid also along with ./a.out\n");
         return 1;
     }    
     // CHECKING FOR /PROC ACCESSS
