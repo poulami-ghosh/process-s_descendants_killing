@@ -1,7 +1,7 @@
 # process-s_descendants_killing
 Goal of the project is to kill a process and all its (current) descendants.The program is taking the PID of the target process as its compulsory argument.
 ## Instructions to run the program :
-###   1.First download the all files(one .c file and five .h files) and keep them in the same directory\
+###   1.First download the all files(one .c file and five .h files) and keep them in the same directory
 ###   2.Compile the file named process_tree_kill_main.c
 ### 3.(A) To view the full process tree rooted at pid 1:
   Run with command ./a.out   whole_tree
