@@ -14,25 +14,6 @@
 
 #include "structure_definition.h"
 
-//__________________FUNCTION FOR DFS TRAVERSAL POST ORDER___________________________
-
-void dfs_post_order(struct TreeNode* node, pid_t* result, int* index) {
-    if (!node) return;
-    for (int i = 0; i < node->child_count; i++) {
-        dfs_post_order(node->children[i], result, index);
-    }
-    result[(*index)++] = node->pid;
-}
-
-//_________________FUNCTION TO GET NUMBER OF DESCENDANTS OF A TREE__________________
-
-int get_dfs_order(struct PIDTree* tree, pid_t* result) {
-    if (!tree || !tree->root) return 0;
-    int index = 0;
-    dfs_post_order(tree->root, result, &index);
-    return index;
-}
-
 //__________________FUNCTION TO KILL DESCENDANTS IN DFS-POST ORDER___________________
 
 void kill_dfs_post_order(struct TreeNode* node) {
